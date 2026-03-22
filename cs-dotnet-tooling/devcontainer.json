@@ -1,0 +1,17 @@
+{
+    "name": "Basic C# and .Net tooling",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {},
+    "customizations": {
+        "vscode": {
+        "extensions": [
+            "ms-dotnettools.csharp",
+            "ms-dotnettools.csdevkit",
+            "editorconfig.editorconfig"
+        ]
+        }
+    },
+    "postCreateCommand": "dotnet restore"
+}
